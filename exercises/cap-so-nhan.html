@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấp số nhân - TRẮC NGHIỆM TOÁN 11</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #ffcb77;
+            --secondary-color: #a2d2ff;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="text-3xl font-bold text-[#ffcb77] flex items-center gap-2">
+                            <div class="relative">
+                                <i class="fas fa-book-open text-4xl"></i>
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-1">
+                                    <span class="text-sm font-bold">×××</span>
+                                </div>
+                            </div>
+                            <span class="text-xl">TRẮC NGHIỆM TOÁN 11 - DÃY SỐ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-900 hover:text-[#ffcb77] px-3 py-2 font-medium">Trang chủ</a>
+                    <a href="../exercises.html" class="text-[#ffcb77] px-3 py-2 font-medium">Bài tập</a>
+                    <a href="../thi-thu.html" class="text-gray-900 hover:text-[#ffcb77] px-3 py-2 font-medium">Thi thử</a>
+                    <a href="../ho-so.html" class="text-gray-900 hover:text-[#ffcb77] px-3 py-2 font-medium">Hồ sơ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Theory Section -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Lý thuyết cấp số nhân</h2>
+            <div class="space-y-4">
+                <div class="bg-orange-50 rounded-lg p-4">
+                    <h3 class="font-medium text-lg mb-2">Định nghĩa</h3>
+                    <p class="text-gray-700">
+                        Cấp số nhân là dãy số mà mỗi số hạng (từ số hạng thứ hai) bằng số hạng liền trước nhân với một số không đổi.
+                        Số không đổi đó gọi là công bội của cấp số nhân.
+                    </p>
+                </div>
+
+                <div class="bg-orange-50 rounded-lg p-4">
+                    <h3 class="font-medium text-lg mb-2">Công thức</h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-700">
+                            - Số hạng tổng quát: \(a_n = a_1 \cdot q^{n-1}\)
+                        </p>
+                        <p class="text-gray-700">
+                            - Tổng n số hạng đầu tiên: \(S_n = a_1\frac{q^n-1}{q-1}\) (với \(q \neq 1\))
+                        </p>
+                        <p class="text-gray-700">
+                            Trong đó:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 ml-4">
+                            <li>\(a_1\): số hạng đầu tiên</li>
+                            <li>\(q\): công bội</li>
+                            <li>\(n\): số thứ tự của số hạng</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-orange-50 rounded-lg p-4">
+                    <h3 class="font-medium text-lg mb-2">Tính chất</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Mỗi số hạng (từ số hạng thứ hai) bằng số hạng liền trước nhân với công bội</li>
+                        <li>Tỉ số hai số hạng liên tiếp bằng công bội</li>
+                        <li>Bình phương số hạng giữa của ba số hạng liên tiếp bằng tích hai số hạng còn lại</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practice Problems -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Bài tập thực hành</h2>
+            
+            <!-- Problem 1 -->
+            <div class="mb-8">
+                <div class="border rounded-lg p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                            Nhận biết
+                        </span>
+                        <span class="text-gray-500"><i class="fas fa-clock mr-2"></i>2 phút</span>
+                    </div>
+                    <p class="text-gray-900 mb-4">
+                        Cho cấp số nhân (u<sub>n</sub>) có u<sub>1</sub> = 3 và công bội q = 2. Tính u<sub>5</sub>.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem1" value="A" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">A) 48</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem1" value="B" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">B) 32</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem1" value="C" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">C) 64</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem1" value="D" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">D) 96</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button onclick="checkAnswer('geometric_problem1')" class="bg-[#ffcb77] hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                            Kiểm tra
+                        </button>
+                        <div id="result-geometric_problem1" class="mt-2"></div>
+                        <div id="solution-geometric_problem1" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="mb-8">
+                <div class="border rounded-lg p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                            Thông hiểu
+                        </span>
+                        <span class="text-gray-500"><i class="fas fa-clock mr-2"></i>3 phút</span>
+                    </div>
+                    <p class="text-gray-900 mb-4">
+                        Một người gửi tiết kiệm 50 triệu đồng với lãi suất 10% một năm (lãi kép). 
+                        Hỏi sau 3 năm số tiền của người đó là bao nhiêu?
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem2" value="A" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">A) 65 triệu đồng</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem2" value="B" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">B) 66.55 triệu đồng</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem2" value="C" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">C) 67.65 triệu đồng</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem2" value="D" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">D) 68.75 triệu đồng</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button onclick="checkAnswer('geometric_problem2')" class="bg-[#ffcb77] hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                            Kiểm tra
+                        </button>
+                        <div id="result-geometric_problem2" class="mt-2"></div>
+                        <div id="solution-geometric_problem2" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problem 3 -->
+            <div class="mb-8">
+                <div class="border rounded-lg p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                            Vận dụng
+                        </span>
+                        <span class="text-gray-500"><i class="fas fa-clock mr-2"></i>5 phút</span>
+                    </div>
+                    <p class="text-gray-900 mb-4">
+                        Một quả bóng được thả rơi từ độ cao 100m. Sau mỗi lần chạm đất, quả bóng nảy lên được 80% độ cao của lần rơi trước. 
+                        Hỏi tổng quãng đường quả bóng đi được sau 4 lần nảy?
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem3" value="A" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">A) 351.2m</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem3" value="B" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">B) 356.8m</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem3" value="C" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">C) 361.4m</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="geometric_problem3" value="D" class="h-4 w-4 text-[#ffcb77] focus:ring-[#ffcb77] border-gray-300">
+                            <label class="ml-3 block text-gray-700">D) 366.0m</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button onclick="checkAnswer('geometric_problem3')" class="bg-[#ffcb77] hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                            Kiểm tra
+                        </button>
+                        <div id="result-geometric_problem3" class="mt-2"></div>
+                        <div id="solution-geometric_problem3" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <p>© 2024 TRẮC NGHIỆM TOÁN 11 - DÃY SỐ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="../scripts.js"></script>
+</body>
+</html>
