@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấp số cộng - TRẮC NGHIỆM TOÁN 11</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #a2d2ff;
+            --secondary-color: #ffcb77;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="text-3xl font-bold text-[#a2d2ff] flex items-center gap-2">
+                            <div class="relative">
+                                <i class="fas fa-book-open text-4xl"></i>
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-1">
+                                    <span class="text-sm font-bold">→+→+</span>
+                                </div>
+                            </div>
+                            <span class="text-xl">TRẮC NGHIỆM TOÁN 11 - DÃY SỐ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-900 hover:text-[#a2d2ff] px-3 py-2 font-medium">Trang chủ</a>
+                    <a href="../exercises.html" class="text-[#a2d2ff] px-3 py-2 font-medium">Bài tập</a>
+                    <a href="../thi-thu.html" class="text-gray-900 hover:text-[#a2d2ff] px-3 py-2 font-medium">Thi thử</a>
+                    <a href="../ho-so.html" class="text-gray-900 hover:text-[#a2d2ff] px-3 py-2 font-medium">Hồ sơ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Theory Section -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Lý thuyết cấp số cộng</h2>
+            <div class="space-y-4">
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <h3 class="font-medium text-lg mb-2">Định nghĩa</h3>
+                    <p class="text-gray-700">
+                        Cấp số cộng là dãy số mà mỗi số hạng (từ số hạng thứ hai) bằng số hạng liền trước cộng với một số không đổi.
+                        Số không đổi đó gọi là công sai của cấp số cộng.
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <h3 class="font-medium text-lg mb-2">Công thức</h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-700">
+                            - Số hạng tổng quát: \(a_n = a_1 + (n-1)d\)
+                        </p>
+                        <p class="text-gray-700">
+                            - Tổng n số hạng đầu tiên: \(S_n = \frac{n}{2}(a_1 + a_n) = \frac{n}{2}[2a_1 + (n-1)d]\)
+                        </p>
+                        <p class="text-gray-700">
+                            Trong đó:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 ml-4">
+                            <li>\(a_1\): số hạng đầu tiên</li>
+                            <li>\(d\): công sai</li>
+                            <li>\(n\): số thứ tự của số hạng</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <h3 class="font-medium text-lg mb-2">Tính chất</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Mỗi số hạng (từ số hạng thứ hai) bằng số hạng liền trước cộng với công sai</li>
+                        <li>Hiệu hai số hạng liên tiếp bằng công sai</li>
+                        <li>Số hạng giữa của ba số hạng liên tiếp bằng nửa tổng hai số hạng còn lại</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practice Problems -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Bài tập thực hành</h2>
+            
+            <!-- Problem 1 -->
+            <div class="mb-8">
+                <div class="border rounded-lg p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                            Nhận biết
+                        </span>
+                        <span class="text-gray-500"><i class="fas fa-clock mr-2"></i>2 phút</span>
+                    </div>
+                    <p class="text-gray-900 mb-4">
+                        Cho cấp số cộng (u<sub>n</sub>) có u<sub>1</sub> = 5 và công sai d = 3. Tính u<sub>8</sub>.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem1" value="A" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">A) 26</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem1" value="B" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">B) 23</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem1" value="C" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">C) 29</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem1" value="D" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">D) 20</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button onclick="checkAnswer('arithmetic_problem1')" class="bg-[#a2d2ff] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                            Kiểm tra
+                        </button>
+                        <div id="result-arithmetic_problem1" class="mt-2"></div>
+                        <div id="solution-arithmetic_problem1" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="mb-8">
+                <div class="border rounded-lg p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                            Thông hiểu
+                        </span>
+                        <span class="text-gray-500"><i class="fas fa-clock mr-2"></i>3 phút</span>
+                    </div>
+                    <p class="text-gray-900 mb-4">
+                        Cho cấp số cộng (u<sub>n</sub>) có u<sub>1</sub> = 4 và u<sub>6</sub> = 19. Tìm công sai d của cấp số cộng.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem2" value="A" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">A) 2</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem2" value="B" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">B) 3</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem2" value="C" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">C) 4</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem2" value="D" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">D) 5</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button onclick="checkAnswer('arithmetic_problem2')" class="bg-[#a2d2ff] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                            Kiểm tra
+                        </button>
+                        <div id="result-arithmetic_problem2" class="mt-2"></div>
+                        <div id="solution-arithmetic_problem2" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problem 3 -->
+            <div class="mb-8">
+                <div class="border rounded-lg p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                            Vận dụng
+                        </span>
+                        <span class="text-gray-500"><i class="fas fa-clock mr-2"></i>5 phút</span>
+                    </div>
+                    <p class="text-gray-900 mb-4">
+                        Một người gửi tiết kiệm 10 triệu đồng. Mỗi tháng người đó gửi thêm 2 triệu đồng. 
+                        Hỏi sau 12 tháng, tổng số tiền người đó đã gửi là bao nhiêu?
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem3" value="A" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">A) 34 triệu đồng</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem3" value="B" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">B) 142 triệu đồng</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem3" value="C" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">C) 154 triệu đồng</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="arithmetic_problem3" value="D" class="h-4 w-4 text-[#a2d2ff] focus:ring-[#a2d2ff] border-gray-300">
+                            <label class="ml-3 block text-gray-700">D) 166 triệu đồng</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button onclick="checkAnswer('arithmetic_problem3')" class="bg-[#a2d2ff] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                            Kiểm tra
+                        </button>
+                        <div id="result-arithmetic_problem3" class="mt-2"></div>
+                        <div id="solution-arithmetic_problem3" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <p>© 2024 TRẮC NGHIỆM TOÁN 11 - DÃY SỐ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="../scripts.js"></script>
+</body>
+</html>
