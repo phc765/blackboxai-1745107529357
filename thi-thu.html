@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thi thử - TRẮC NGHIỆM TOÁN 11</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #a2d2ff;
+            --secondary-color: #ffcb77;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="text-3xl font-bold text-[#a2d2ff] flex items-center gap-2">
+                            <div class="relative">
+                                <!-- Book Base -->
+                                <i class="fas fa-book-open text-4xl"></i>
+                                
+                                <!-- Mathematical Symbols Overlay -->
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-1">
+                                    <span class="text-sm font-bold">→+→+</span>
+                                    <span class="text-sm font-bold">××</span>
+                                </div>
+                            </div>
+                            <span class="text-xl">TRẮC NGHIỆM TOÁN 11 - DÃY SỐ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-900 hover:text-[#a2d2ff] px-3 py-2 font-medium">Trang chủ</a>
+                    <a href="exercises.html" class="text-gray-900 hover:text-[#a2d2ff] px-3 py-2 font-medium">Bài tập</a>
+                    <a href="thi-thu.html" class="text-[#a2d2ff] px-3 py-2 font-medium">Thi thử</a>
+                    <a href="ho-so.html" class="text-gray-900 hover:text-[#a2d2ff] px-3 py-2 font-medium">Hồ sơ</a>
+                    <a href="gioi-thieu.html" class="text-gray-900 hover:text-[#a2d2ff] px-3 py-2 font-medium">Giới thiệu</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Filter Tabs -->
+        <div class="flex space-x-4 mb-8">
+            <button class="px-6 py-2 bg-white text-[#a2d2ff] font-medium rounded-lg shadow-sm">
+                Tất cả
+            </button>
+            <button class="px-6 py-2 bg-gray-100 text-gray-600 font-medium rounded-lg hover:bg-white hover:text-[#a2d2ff]">
+                Đề thi thử
+            </button>
+            <button class="px-6 py-2 bg-gray-100 text-gray-600 font-medium rounded-lg hover:bg-white hover:text-[#a2d2ff]">
+                Kiểm tra 15 phút
+            </button>
+            <button class="px-6 py-2 bg-gray-100 text-gray-600 font-medium rounded-lg hover:bg-white hover:text-[#a2d2ff]">
+                Chuyên đề
+            </button>
+        </div>
+
+        <!-- Test Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Test 1 -->
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="flex items-center gap-2 font-semibold">
+                        <i class="fas fa-file-alt text-[#a2d2ff]"></i>
+                        Đề thi thử số 1
+                    </h3>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                        Trung bình
+                    </span>
+                </div>
+                <p class="text-gray-600 mb-4">Đề thi thử tổng hợp kiến thức về dãy số</p>
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-clock"></i>
+                        45 phút
+                    </span>
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-question-circle"></i>
+                        20 câu hỏi
+                    </span>
+                </div>
+                <div class="text-green-600 font-medium mb-4">Đã hoàn thành: 16/20 điểm</div>
+                <button class="w-full bg-[#a2d2ff] text-white py-2 rounded-lg font-medium hover:bg-blue-600">
+                    Làm lại
+                </button>
+            </div>
+
+            <!-- Test 2 -->
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="flex items-center gap-2 font-semibold">
+                        <i class="fas fa-file-alt text-[#a2d2ff]"></i>
+                        Đề thi thử số 2
+                    </h3>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                        Trung bình
+                    </span>
+                </div>
+                <p class="text-gray-600 mb-4">Đề thi thử tổng hợp kiến thức về dãy số</p>
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-clock"></i>
+                        45 phút
+                    </span>
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-question-circle"></i>
+                        20 câu hỏi
+                    </span>
+                </div>
+                <div class="text-green-600 font-medium mb-4">Đã hoàn thành: 18/20 điểm</div>
+                <button class="w-full bg-[#a2d2ff] text-white py-2 rounded-lg font-medium hover:bg-blue-600">
+                    Làm lại
+                </button>
+            </div>
+
+            <!-- Test 3 -->
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="flex items-center gap-2 font-semibold">
+                        <i class="fas fa-file-alt text-[#a2d2ff]"></i>
+                        Đề thi thử số 3
+                    </h3>
+                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
+                        Khó
+                    </span>
+                </div>
+                <p class="text-gray-600 mb-4">Đề thi thử tổng hợp kiến thức về dãy số</p>
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-clock"></i>
+                        45 phút
+                    </span>
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-question-circle"></i>
+                        20 câu hỏi
+                    </span>
+                </div>
+                <button class="w-full bg-[#a2d2ff] text-white py-2 rounded-lg font-medium hover:bg-blue-600">
+                    Bắt đầu làm bài
+                </button>
+            </div>
+
+            <!-- Quick Test 1 -->
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="flex items-center gap-2 font-semibold">
+                        <i class="fas fa-clock text-[#a2d2ff]"></i>
+                        Kiểm tra 15 phút - Cấp số cộng
+                    </h3>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                        Cơ bản
+                    </span>
+                </div>
+                <p class="text-gray-600 mb-4">Kiểm tra nhanh kiến thức cấp số cộng</p>
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-clock"></i>
+                        15 phút
+                    </span>
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-question-circle"></i>
+                        10 câu hỏi
+                    </span>
+                </div>
+                <div class="text-green-600 font-medium mb-4">Đã hoàn thành: 9/10 điểm</div>
+                <button class="w-full bg-[#a2d2ff] text-white py-2 rounded-lg font-medium hover:bg-blue-600">
+                    Làm lại
+                </button>
+            </div>
+
+            <!-- Quick Test 2 -->
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="flex items-center gap-2 font-semibold">
+                        <i class="fas fa-clock text-[#ffcb77]"></i>
+                        Kiểm tra 15 phút - Cấp số nhân
+                    </h3>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                        Cơ bản
+                    </span>
+                </div>
+                <p class="text-gray-600 mb-4">Kiểm tra nhanh kiến thức cấp số nhân</p>
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-clock"></i>
+                        15 phút
+                    </span>
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-question-circle"></i>
+                        10 câu hỏi
+                    </span>
+                </div>
+                <button class="w-full bg-[#ffcb77] text-white py-2 rounded-lg font-medium hover:bg-yellow-600">
+                    Bắt đầu làm bài
+                </button>
+            </div>
+
+            <!-- Quick Test 3 -->
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="flex items-center gap-2 font-semibold">
+                        <i class="fas fa-clock text-[#a2d2ff]"></i>
+                        Kiểm tra 15 phút - Tổng hợp
+                    </h3>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                        Trung bình
+                    </span>
+                </div>
+                <p class="text-gray-600 mb-4">Kiểm tra nhanh kiến thức tổng hợp</p>
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-clock"></i>
+                        15 phút
+                    </span>
+                    <span class="flex items-center gap-1">
+                        <i class="fas fa-question-circle"></i>
+                        10 câu hỏi
+                    </span>
+                </div>
+                <button class="w-full bg-[#a2d2ff] text-white py-2 rounded-lg font-medium hover:bg-blue-600">
+                    Bắt đầu làm bài
+                </button>
+            </div>
+        </div>
+
+        <!-- Time Info -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Column -->
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+                <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                    <i class="fas fa-clock text-[#a2d2ff]"></i>
+                    Thời gian làm bài
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Đề thi thử:</span>
+                        <span class="font-medium">45 phút</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Chuyên đề:</span>
+                        <span class="font-medium">30 phút</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Kiểm tra 15 phút:</span>
+                        <span class="font-medium">15 phút</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="bg-purple-50 rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                    <i class="fas fa-lightbulb text-purple-500"></i>
+                    Hướng dẫn làm bài
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <i class="fas fa-check text-green-500"></i>
+                        Đọc kỹ đề bài trước khi làm
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <i class="fas fa-check text-green-500"></i>
+                        Làm các câu dễ trước, khó sau
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <i class="fas fa-check text-green-500"></i>
+                        Kiểm tra lại kết quả nếu có thời gian
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                        <i class="fas fa-check text-green-500"></i>
+                        Nộp bài trước khi hết thời gian
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <p>© 2024 TRẮC NGHIỆM TOÁN 11 - DÃY SỐ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
